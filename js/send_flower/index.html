@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>代码设计模式之代理模式</h1>
+    <script>
+       // document.write("hello world!");
+       //document.write('666') 
+       //对象字面量 描述功能 表现力
+       //对象由属性和方法构成
+       let sjl={
+        name:'舒剑兰',
+        age:'22',
+        hometown:'丰城',
+        isSingle:true,
+        sendFlower(o){//o是形参
+            o.receiveFlower(this)
+
+           
+}
+            
+        }
+       
+       let xm={
+        xq:50,
+        name:'小美',
+        age:20,
+        hometown:'南昌',
+        room:'623',
+        isSingle:true,
+        receiveFlower(o){
+            console.log('${this.name}收到了${o.name}送的花！')
+               if (this.xq>=90){
+                console.log('约会!')
+               }else{
+                console.log('流泪！')
+               }
+        }
+
+       }
+       //代理模式
+       let xh={
+        name:'小红',
+        age:20,
+        hometown:'丰城',
+        room:'623',
+        //接口 当不同的对象具有相同的方法时，可以互换使用
+        receiveFlower(o){
+            
+            //if(o.name==='舒剑兰'){
+               // console.log('在一起。。')
+
+            //}else{
+                xm.receiveFlower(o)
+           // }
+           setTimeout(function(){
+        xm.xq=95;
+        xm.receiveFlower(o)
+           },10000)
+            }
+           
+       }
+       sjl.sendFlower(xh)
+       
+    </script>
+</body>
+</html>
