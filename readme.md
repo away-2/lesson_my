@@ -1,48 +1,31 @@
-# 大厂HTML5 作品赏析
+  -内置了很多好用的组件
+      复用
+      wsiper>swiper-item 组件
+-在wxml里{{}}模板
+    在页面上显示出来
+    页面上如果有多个循环片段需要输出的话
+    wx:for  指令 slides    wx：key  唯一值
+    每次遍历的时候 item  用于页面的输出
+    
+    rpx： responsive pixel（动态像素），简称 rpx  微信小程序适配
+    在分辨率不同的设备上保证视觉元素的正常显示
+
+-css 在哪写？
+     page/xxx.wxss 业务样式 ，更具体页面有关
+     如果有些通用样式呢？  app.wxss
 
 
--html5 标签
-  audio 网易云音乐
-  video 爱奇艺 B站
+-模块化  面向对象思想
 
--background-size
-   1.移动端rem  w h 是多变的 而PC端没有这个问题
-   2.移动端 retina 3倍retina
-   40x40 80x80 120x120
-   200x200
-   3.background-size：背景图片大小
-    cover（使背景图片等比例缩放填满容器 超出则剪裁
-    contain
+-事件 bindtap 移动端tap 事件
+   事件处理函数在 Page({
 
 
--库文件引入位置
-  1.css 放到head里
-      css 应该尽早的参与网页的渲染
+   }) 声明就行
+
+-wx.navigateTo({
 
 
-  2.js 放在body最下面，js会阻塞页面渲染
+})
 
-
-- swiper 滑动组件库的使用
-     1.引入swiper组件库
-         js  css
-     2. 固定的html结构 
-        .swiper-container(滑动区域大小)>.swiper-wrapper>.swiper-slide
-     3. new Swiper（selector,{
-        direction:''
-     })
-
-
-translate3d(-50%,0,0) 3d 启动3d加速器 GPU渲染
-translate(-50%,0) 2d
-效果一样
-
-
--使用linear-gradient 生成背景图片
-     1.颜色渐变的图片，#f8ddd1,#faece5 73%,#fad2c0
-         colorStop
-     2.性能优化， 图片 下载比较大
-         css 写的，不需要额外的下载
-         img src 下载+显示
-     3.下载越多，http 并发数越多，卡
-          马路 
+wx 命名空间  源源不断的微信查克拉能量
