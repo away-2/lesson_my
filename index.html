@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>网易云音乐</title>
+    <title>世界杯-招商银行</title>
     <script>
+    // js 阻塞性  适配 所有css 前面 
     function responsive() {
         const w = window.innerWidth / 10
         // console.log(w);
@@ -16,50 +17,24 @@
     }
     responsive();
     window.addEventListener('resize', responsive);
-    </script>    
+    </script> 
     <link rel="stylesheet" href="./common.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
 </head>
 <body>
-    <audio src="./bgm.mp3" id="j-bgm"></audio>
-    <div class="music-btn off"></div>
-    <div class="next-view-c"></div>
-    <!-- 滑屏结构 -->
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="view index">
-                    <div class="logo-c"></div>
-                </div>
+    <!-- <div class="box"></div> -->
+    <div class="container">
+        <div class="load">
+            <div class="loadImg">
+                <div class="loadTxt">loading</div>
+                <div class="circle"></div>
+                <div class="circle1"></div>
             </div>
-            <div class="swiper-slide">
-                <div class="view special">
-                    <div class="sun"></div>
-                </div>
-            </div>
-            <div class="swiper-slide"></div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
     <script>
-    const bgMusic = document.querySelector('#j-bgm'); // audio
-    const musicBtn = document.querySelector('.music-btn');
-    let isPlaying = false
+    window.onload = function() {
 
-    musicBtn.addEventListener('click', function() {
-        if (isPlaying) {
-            bgMusic.pause()
-        } else {
-            bgMusic.play();
-        }
-        isPlaying = !isPlaying
-        musicBtn.classList.toggle('off');
-    })
-
-    var mySwiper = new Swiper('.swiper-container', {
-        direction: 'vertical'
-    })
-
+    }
     </script>
 </body>
 </html>

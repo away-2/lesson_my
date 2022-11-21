@@ -1,31 +1,27 @@
-  -内置了很多好用的组件
-      复用
-      wsiper>swiper-item 组件
--在wxml里{{}}模板
-    在页面上显示出来
-    页面上如果有多个循环片段需要输出的话
-    wx:for  指令 slides    wx：key  唯一值
-    每次遍历的时候 item  用于页面的输出
-    
-    rpx： responsive pixel（动态像素），简称 rpx  微信小程序适配
-    在分辨率不同的设备上保证视觉元素的正常显示
+# 营销HTML5页面特效开发
+- 招商银行
 
--css 在哪写？
-     page/xxx.wxss 业务样式 ，更具体页面有关
-     如果有些通用样式呢？  app.wxss
+1. !DOCTYPE html
+    html5 版本的声明
 
+2. rotateX（90deg） 推倒 顺时针
+   rotateY     人钢管舞
+   rotateZ    轮胎
+   perspctive:800px;   视点   眼睛离屏幕的距离  远近  大小  
+   transform-style：perseve-3d
 
--模块化  面向对象思想
+3. html 怎么看到静态页面（用户体验 越快越好）
+  html（结构）+ css （样式）  js可晚一点（交互  ，DOM .style）
+     - 下载html 文档
+     - link script image ...
+        启动下载    css  href  不会阻塞html下载   放到头部 可尽快进行
+        script src     放在最后    会阻塞
+        image  src
 
--事件 bindtap 移动端tap 事件
-   事件处理函数在 Page({
-
-
-   }) 声明就行
-
--wx.navigateTo({
-
-
-})
-
-wx 命名空间  源源不断的微信查克拉能量
+4. chrome 浏览器的内核   webkit
+   id 浏览器 edge
+   mozilla
+   360 如果本地安装了chrome webkit
+   否则  ms
+   实验中的新属性 可能需要 添加 支持
+    -webkit-backface-visibility: hidden;
