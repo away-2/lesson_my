@@ -1,27 +1,12 @@
-# 营销HTML5页面特效开发
-- 招商银行
+#    电商小程序开发
+ 1. npm init -y
+  可以安装第三方包的小程序  @vant
+ 2.  npm i @vant/weapp
+ npm i apifmwxapi   api工厂
+  开发框架
+ 3. 工具， 构建npm
+    miniprogram_npm
 
-1. !DOCTYPE html
-    html5 版本的声明
-
-2. rotateX（90deg） 推倒 顺时针
-   rotateY     人钢管舞
-   rotateZ    轮胎
-   perspctive:800px;   视点   眼睛离屏幕的距离  远近  大小  
-   transform-style：perseve-3d
-
-3. html 怎么看到静态页面（用户体验 越快越好）
-  html（结构）+ css （样式）  js可晚一点（交互  ，DOM .style）
-     - 下载html 文档
-     - link script image ...
-        启动下载    css  href  不会阻塞html下载   放到头部 可尽快进行
-        script src     放在最后    会阻塞
-        image  src
-
-4. chrome 浏览器的内核   webkit
-   id 浏览器 edge
-   mozilla
-   360 如果本地安装了chrome webkit
-   否则  ms
-   实验中的新属性 可能需要 添加 支持
-    -webkit-backface-visibility: hidden;
+4. apifm-wxapi   数据接口的抽象
+npm i apifm-wxapi   安装并构建
+https://api.it120.cc/tz/shop/goods/category/all
