@@ -1,4 +1,5 @@
 - git init
+git clone https://github.com/away-2/lesson_my.git
 - git add readme.md   多次添加暂存区
 - git commit -m 'reason'  一次性提交
 - git log --oneline   提交记录
