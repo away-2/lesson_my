@@ -1,5 +1,5 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "首页"
-
+  "usingComponents": {
+    "Goods": "/components/goods/goods"
+  }
 }

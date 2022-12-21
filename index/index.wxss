@@ -1,23 +1,18 @@
-page{
-    position: relative;/*相对定位*/
-    width:100vw;/*相对单位 viewport width*/
-    height:100vh;/*相对单位 viewport height*/
+.dewu-hd{
+  display: flex;
 }
-.container{
-       position:absolute;/*绝对定位*/
-       top:50%;
-       left:50%;
-       transform: translate(-50%,-50%);
-       width:80%;
-       height: 60%;
-       border:1px solid black;
-       margin: 0px auto;
-       overflow: hidden;
-       border-radius: 5px;
-       text-align: center;
-
+.dewu-hd__search{
+  flex: 1;
 }
-.title{
-    color: black;
-    font-size: 20px;
+.dewu-kind{
+  width: 100rpx;
+  height: 108rpx;
+  background-color: #fff;
+}
+.dewu-kind image{
+  width: 52rpx;
+  height: 68rpx;
+  /* position: relative;
+  top: 30rpx; */
+  padding: 20rpx 24rpx;
 }
