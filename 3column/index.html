@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圣杯布局 语义化标签下的三栏式布局 SEO 搜索引擎优化</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            color: white;
+        }
+        header,footer{
+            height: 50px;
+            background-color: blue;
+            line-height: 50px;
+
+        }
+        /* main  自适应的三列式 */
+        .wrapper{
+            padding: 0 100px;
+             overflow: hidden; /*触发BFC */
+        }
+        .col{
+            position: relative;
+            float: left;
+            height: 200px;
+        }
+        .main{
+            width: 100%;
+            background-color: green;
+        }
+        .left{
+            width: 100px;
+            margin-left: -100%;
+            background-color: red;
+            left: -100px;
+        }
+        .right{
+            width: 100px;
+            margin-left: -100px;
+            background-color: pink;
+            right: -100px;
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <section class="wrapper">
+        <!-- 中间元素要放最左边 例如淘宝这样的大型页面-->
+        <section class="col main">main</section>
+        <aside class="col left">left</aside>
+        <aside class="col right">right</aside>
+    </section>
+    <footer>footer</footer>
+    <script>
+    // const isPhone = (){
+    //     const strAgent = navigator.userAgent;
+    //     if(!strAgent.length){
+    //         return false;
+    //     }
+    //     if(/iPhone|Android/i.test(strAgent))
+      
+    //     return false;
+    // }
+    const isMobile =() => /iPhone|Android/i.test(navigator.userAgent)
+    console.log(isMobile());
+    // if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            
+    //     }
+    </script>
+    
+</body>
+</html>
