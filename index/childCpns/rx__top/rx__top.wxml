@@ -1,0 +1,65 @@
+<!--pages/index/childCpns/rx__top/rx__top.wxml-->
+<view class="rx_hd">
+        <swiper class="rx_banners" 
+        indicator-dots='true'
+        indicator-active-color='#ff5777'
+        circular='true'
+        autoplay='true'
+        interval='3000'
+        >
+            <block wx:for="{{slides}}" wx:key="id">
+                <swiper-item>
+                    <navigator>
+                        <image src="{{item.image}}" />
+                    </navigator>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <view class="rx__bd">
+        <view class="rx_bdtop">
+            <view class="rx_bdtopl"> Lucky you~ 跟幸运打个招呼</view>
+            <view class="rx_bdtopr">登录/注册</view>
+        </view>
+        <view class="rx_bdbottom">
+            <view class="box1">
+                <view class="item1">
+                    <image class="item1_img" src="/images/ddq.png" />
+                    <view class="text">到店取</view>
+                    <view class="condition">提前下单自取</view>
+                </view>
+                <view class="item1">
+                    <image  class="item1_img" src="/images/xys.png"></image>
+                <view class="text">幸运送</view>
+                <view class="condition">无接触及时送</view>
+                </view>
+                <view class="item1">
+                    <image  class="item1_img" src="/images/mcp.png"></image>
+                <view class="text">买潮品</view>
+                <view class="condition">瑞幸颜值周边</view>
+                </view>
+            </view>
+            <view class="box2">
+                <view class="item2">
+                    <image  class="item2_img" src="/images/c4z3.png"></image>
+                <view class="text">充4赠3</view>
+                <view class="condition">咖啡钱包</view>
+                </view>
+                <view class="item2">
+                    <image  class="item2_img" src="/images/lpk.png"></image>
+                <view class="text">礼品卡</view>
+                <view class="condition">送TA咖啡</view>
+                </view>
+                <view class="item2">
+                    <image  class="item2_img" src="/images/flzx.png"></image>
+                <view class="text">福利中心</view>
+                <view class="condition">天天得福利</view>
+                </view>
+                <view class="item2">
+                    <image  class="item2_img" src="/images/cdmj.png"></image>
+                <view class="text">拼单满减</view>
+                <view class="condition">一起点更划算</view>
+                </view>
+            </view>
+        </view>
+    </view>

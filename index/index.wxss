@@ -1,18 +1,109 @@
-.dewu-hd{
-  display: flex;
+/**index.wxss**/
+.home{
+
 }
-.dewu-hd__search{
-  flex: 1;
+.rx__bds{
+    position: relative;
+    height: 195rpx;
+    width: 700rpx;
+    top: -17px;
+    right: -12px;
+    /* margin: 0 14px; */
+
+/* background-color: red; */
+    /* border-radius: 10px; */
 }
-.dewu-kind{
-  width: 100rpx;
-  height: 108rpx;
-  background-color: #fff;
+.rx__bds image{
+    height: 100vh;
+    width: 100vw;
+    border-radius: 10px 10px;
 }
-.dewu-kind image{
-  width: 52rpx;
-  height: 68rpx;
-  /* position: relative;
-  top: 30rpx; */
-  padding: 20rpx 24rpx;
+
+.rx__bdhb{
+    position: relative;
+   height:400px ;
+   width: 355px;
+   /* background: green; */
+   top:100px;
+   right: -10px;
+}
+.rx__bdhb .rx__bdhb_img{
+    height: 400px;
+    width: 355px;
+}
+.rx__bdmd{
+    position: relative;
+    height: 100px;
+    width: 355px;
+    top: 120px;
+    right: -10px;
+}
+.rx__bdmd .rx__bdmd_img{
+    height: 100px;
+    width: 355px;
+}
+.rx__fd{
+/* background-color: red; */
+position: relative;
+top:140px;
+}
+.rx__fd .rx__scroll_top{   
+    height: 100rpx;
+    /* background-color: green; */
+    width: 100vw;
+    padding:0  10px;
+}
+ .scroll_top{
+     white-space: nowrap;
+}
+.scroll_top_item{
+    display: inline-block;
+    font-size: 13pt;
+    
+}
+.titleItem{
+    margin-right: 15px;
+}
+ .rx__scroll_button{
+    /* background-color: yellow; */
+    position: relative;
+    top: -10px;
+     /* margin: 10px; */
+}
+.scroll_button{
+    background-color:#f5f5f5;
+}
+.scroll_button_item{
+    width: 47%;
+    height: 460rpx;
+    background: transparent;
+    margin: 10rpx;
+    background-color: #ffffff;
+    /* background-color: red; */
+}
+.scroll_button_item:nth-child(2n) {
+    float: right;
+  }
+  .scroll_button_item:nth-child(2n-1) {
+    float: left;
+  }
+ .goods{
+    position: relative;
+    width: 350rpx;
+    height: 260rpx;
+    /* padding-top: 10rpx; */
+}
+.title{
+    font-size: 11pt;
+    height: 20px;
+    overflow: hidden;
+    /* background-color: red; */
+}
+.price{
+    font-size: 10pt;
+    font-weight: bold;
+}
+.sell{
+    font-size: 9pt;
+    color: #bababa;
 }

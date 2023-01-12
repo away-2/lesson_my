@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "Goods": "/components/goods/goods"
+      "rx__top":"./childCpns/rx__top/rx__top",
+      "rx__bd":"./childCpns/rx__bd/rx__bd",
+      "rx__fd":"./childCpns/rx__fd/rx__fd"
   }
 }

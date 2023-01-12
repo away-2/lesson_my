@@ -1,0 +1,55 @@
+<!--pages/index/childCpns/rx__bd/rx__bd.wxml-->
+<view class="rx__bdtj">
+        <view class="tj_top">
+            <view class="text">❤️今日特惠，领券后低至9.9元</view>
+            <view class="condition">查看全部</view>
+        </view>
+            <view class="tj_left">
+                <view class="text">山茶花·Dirty</view>
+                <view class="bottom">
+                    <view class="top">直减价</view>￥19￥3̶2̶
+                </view>
+                <image src="/images/tj.png" class="tj_left_img" />
+            </view>
+            <view class="tj_right">
+                <view class="tj_right_top">
+                    <view class="text">太妃榛香厚乳拿铁</view>
+            <view class="bottom"><view class="top">直减价</view>￥18￥3̶2̶</view>
+            <image src="/images/tj.png" class="tj_right_img1"/>
+                </view>
+                <view class="tj_right_bottom">
+                    <view class="text">生酪拿铁</view>
+            <view class="bottom"><view class="top">直减价</view>￥17￥3̶2̶</view>
+            <image src="/images/tj.png" class="tj_right_img1"/></view>
+            </view>
+        </view>
+        <view class="rx__bdfl">
+            <view class="fl_top">
+            <view class="text">福利中心</view>
+            <view class="condition">查看全部</view>
+        </view>
+        <view class="fl_bottom">
+            <scroll-view  scroll-x="true">
+                <view class="fl">
+                <view class="text">超值省钱券包</view>
+                <view class="condition">0.9元购69元券包</view>
+                </view>
+                <view class="fl">
+                <view class="text">#喝咖啡挑战</view>
+                <view class="condition">再喝1单达成</view>
+                </view>
+                <view class="fl">
+                <view class="text">本月咖啡星人</view>
+                <view class="condition">马上冲榜</view>
+                </view>
+                <view class="fl">
+                <view class="text">lucky送福利</view>
+                <view class="condition">领4.8折券</view>
+                </view>
+                <view class="fl">
+                <view class="text">邀请好友</view>
+                <view class="condition">每邀1位好友各得20元</view>
+                </view>
+            </scroll-view>
+        </view>
+        </view>
